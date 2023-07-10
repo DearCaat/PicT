@@ -11,7 +11,7 @@ import math
 import torch.nn.functional as F
 import torch.nn as nn
 from timm.utils.clip_grad import dispatch_clip_grad
-from torch._six import inf
+from torch import inf
 import numpy as np
 import wandb
 
