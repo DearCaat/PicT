@@ -241,7 +241,7 @@ def main(config,eval_best_kfold=None,test_best_kfold=None):
                 wandb.log(eval_metrics)
             return
         elif config.TRAIN_MODE=='predict':
-            pred,label= predict(config, data_loader_test, model,amp_autocast=amp_autocast)
+            pred,label= predict(config, data_loader_test, models_without_ddp,amp_autocast=amp_autocast)
             _save_path = os.path.join(config.OUTPUT,'result',config.EXP_NAME+'_predict_'+config.DATA.DATASET.split('/')[-1])+'.npz'
             np.savez(_save_path,pred=pred,label=label)
             return
