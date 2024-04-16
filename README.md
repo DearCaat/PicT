@@ -7,6 +7,16 @@ For more details of the pavement dataset CQU-BPDD used in paper, please refer to
  
  For more details of this task, see [Pavement Distress Classification](https://github.com/DearCaat/Pavement-Distress-Classification).
 
+## Requirement
+### Core:
+- `torch == 1.11+cu11.5` (Not required, but recommended.)
+- `timm == 0.67`
+- ...
+### Docker:
+Download Docker image via [Baidu Cloud](https://pan.baidu.com/s/1VbIwCEMPo7K7Tr1q-x5JcA?pwd=ihh2).
+
+**Note**: *If u wanto reproduce the results in the paper exactly, please email [Wenhao](mailto:whtang@cqu.edu.cn).*
+
 ## Usage
 These examples are in the **I-REC** setting. For other settings, please change the config file.
 ### Train Swin-S
